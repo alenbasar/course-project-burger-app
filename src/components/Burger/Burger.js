@@ -21,7 +21,6 @@ const burger = (props) => {
       <BurgerIngredient type="bread-top" />
       {transformedIngredients}
       <BurgerIngredient type="bread-bottom" />
-      <p>Total Price: {Math.round(props.totalPrice * 100) / 100}</p>
     </div>
   );
 };
