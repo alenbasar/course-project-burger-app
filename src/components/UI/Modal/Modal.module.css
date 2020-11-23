@@ -20,3 +20,8 @@
     left: calc(50% - 250px);
   }
 }
+@media (min-height: 100px) {
+  .Modal {
+    border-radius: 0%;
+  }
+}

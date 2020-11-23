@@ -14,7 +14,7 @@ const Burger = (props) => {
     }, []); */
   let newIngredients = Object.keys(props.ingredient)
     .map((igKey) => {
-      return [props.ingredient[igKey]].map((_, i) => {
+      return [...Array(props.ingredient[igKey])].map((_, i) => {
         return <BurgerIngredient key={igKey + i} type={igKey} />;
       });
     })
